@@ -29,10 +29,6 @@ public class Greeting
              */
 
 
-            
-
-
-
             if(name=="mohan" || roll==23)
             {
                 System.out.println("welcome ");

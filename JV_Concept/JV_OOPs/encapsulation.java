@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class encapsulation {
     private  double bal=5000;   //encapsulation
-    private  int pwd;
+    private  int pwd; //private instense variable
 
     public void deposite(double money) {
         System.out.println("enter password=");
@@ -13,8 +13,10 @@ public class encapsulation {
             System.out.println("deposited money=" + money);
             System.out.println("total Balance=" + bal);
         }
-        else{System.out.println("invalid password...");
-    }
+
+        else{
+            System.out.println("invalid password...");
+        }
     } 
     public void withdraw(double money) {
         System.out.println("enter password= ");
@@ -28,16 +30,14 @@ public class encapsulation {
             }
         }
     }
-
     public void checkBal(){
         System.out.println("total Balance=" + bal);
         try( Scanner s=new Scanner(System.in)) {
         pwd =s.nextInt();
         if(pwd == 123){
         System.out.println("Total bal.= "+ bal);
+        }
     }
-    
-}
 }
 }
 class customer{   //only this line is shown tro customer
@@ -49,6 +49,7 @@ class customer{   //only this line is shown tro customer
         System.out.println("2.Check Balance: ");
         System.out.println("3.withdraw: ");
         System.out.print("\n Enter your choice: ");
+        
         try (Scanner s2 = new Scanner(System.in)) {
             opt=s2.nextInt();
         }
@@ -58,8 +59,7 @@ class customer{   //only this line is shown tro customer
             case 2: b.withdraw(1000);
             case 3: b.checkBal();
             break;
-            default: System.out.println("invalid...");
-            
+            default: System.out.println("invalid...");    
         }
     }
 

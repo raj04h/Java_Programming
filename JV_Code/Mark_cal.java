@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
- class Mark_cal{
-    public static void main(String[] args) 
-{
+public class Mark_cal{
+    public static void main(String[] args){
     try (Scanner scan = new Scanner(System.in))
     {
         System.out.print("total marks=");
